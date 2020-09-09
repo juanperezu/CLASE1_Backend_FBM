@@ -1,10 +1,11 @@
 const express = require('express');
 const app = express(); //constructor  Clase Express
 const bodyParser = require('body-parser');
+
 app.get('/',function(req,res){
 res.send('Hola Mundasso PCJIC');// genera una respuest(res)response
 });
-
+// /routee
 app.get('/json',function(req,res){ // Request(req)
     //Response res
 res.json({hola:'Media Técnica PCJIC'});
